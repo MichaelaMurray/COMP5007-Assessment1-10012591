@@ -1,28 +1,30 @@
 .thickborder {
-    border: 4px solid #222;
+    border: 2px solid #222;
     box-sizing:border-box;
 }
 
-img {
+div.gallery img {
     height : 200px;
+    width : 100%;
+
 }
 
 h1 {
-    font-family: arial;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 30px;
-    color: #222; 
+    color: #800040; 
     text-align: center;
 }
 
-body {
-    background-color: lightblue;
+:root {
+    background-color: #f5eff5;
 }
 
 blockquote {
-     border-left: 4px solid #888;
+     border-left: 2px solid #888;
      padding-left: 5px;
      font-size: 20px;
-     color: #477;
+     color: #000000;
      max-width: 150px;
 }
 
@@ -33,8 +35,23 @@ p {
      padding: 3px;
 }
 
-div {
+div.gallery {
     border: 2px solid #222;
     float:left;
     margin: 5px;
+    width: 20%;
+    height: 50%;
+}
+
+div.center {
+    position:relative;
+    left: 50%;
+    width: 80%;
+    margin-left: -37%;
+}
+
+@media screen and (max-width: 600px) {
+    :root{
+        background-color: #ccffff;
+    }
 }
